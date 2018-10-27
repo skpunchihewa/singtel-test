@@ -6,6 +6,6 @@ package dev.singtel.interview;
 public class Rooster extends Chicken{
 
     void sing(){
-        Utility.printLn("“Cock-a-doodle-doo”");
+        Utility.printLn("Cock-a-doodle-doo");
     }
 }

@@ -9,12 +9,9 @@ public class Solution {
     public static void main(String[] args) {
 
         Chicken chicken = new Chicken();
+        chicken.setWordsToSing("Cock-a-doodle-doo");
         chicken.sing();
 
-
-        Duck duck = new Duck();
-        duck.sing();
-        duck.swim();
 
 
     }

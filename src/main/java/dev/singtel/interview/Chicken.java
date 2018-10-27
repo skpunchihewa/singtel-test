@@ -7,8 +7,15 @@ import dev.singtel.interview.interfaces.SingingBirds;
  */
 public class Chicken extends Bird {
 
+    private String words = "";
+
     void sing(){
-        Utility.printLn("Cluck, cluck");
+        Utility.printLn(words);
+    }
+
+
+    void setWordsToSing(String words){
+        this.words = words;
     }
 
 }
