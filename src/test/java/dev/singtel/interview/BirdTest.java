@@ -11,10 +11,7 @@ import java.io.PrintStream;
 /**
  * @author Thusitha Nuwan
  */
-public class BirdTest {
-    private ByteArrayOutputStream byteOut = new ByteArrayOutputStream();
-    private boolean autoFlush = false;
-    private PrintStream out = new PrintStream(byteOut, autoFlush);
+public class BirdTest extends BaseTest{
 
     private String flyCheck = "I am flying\r\n";
     private String singCheck = "I am singing\r\n";

@@ -6,10 +6,10 @@ package dev.singtel.interview;
 public class Bird extends Animal {
 
     void fly() {
-        System.out.println("I am flying");
+        Utility.printLn("I am flying");
     }
 
     void sing() {
-        System.out.println("I am singing");
+        Utility.printLn("I am singing");
     }
 }

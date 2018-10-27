@@ -6,8 +6,10 @@ package dev.singtel.interview;
 public class Animal {
 
     void walk() {
-        System.out.println("I am walking");
+
+        Utility.printLn("I am walking");
     }
+
 
 
 }

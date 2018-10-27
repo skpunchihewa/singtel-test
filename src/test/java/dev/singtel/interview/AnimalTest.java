@@ -12,11 +12,9 @@ import static org.junit.Assert.*;
 /**
  * @author Thusitha Nuwan
  */
-public class AnimalTest {
+public class AnimalTest extends BaseTest{
 
-    private ByteArrayOutputStream byteOut = new ByteArrayOutputStream();
-    private boolean autoFlush = false;
-    private PrintStream out = new PrintStream(byteOut, autoFlush);
+
     private Animal animal = new Animal();
 
     private String walkCheck = "I am walking\r\n";
