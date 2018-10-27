@@ -4,32 +4,34 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.PrintStream;
+import static org.junit.Assert.*;
 
 /**
  * @author Thusitha Nuwan
  */
-public class BirdTest extends BaseTest{
+public class DuckTest extends BaseTest{
 
-    private String flyCheck = "I am flying\r\n";
-    private String singCheck = "I am singing\r\n";
+    private String singCheck = "Quack, quack\r\n";
+    private String swimCheck = "duck swimming\r\n";
 
-    private Bird b = new Bird();
+    private Duck b = new Duck();
 
 
     @Before
     public void setup(){
         System.setOut(out);
     }
-
-
-
     @Test
     public void sing() {
         b.sing();
         String out = byteOut.toString();
         Assert.assertTrue(out.equals(singCheck));
+    }
+
+    @Test
+    public void swim() {
+        b.swim();
+        String out = byteOut.toString();
+        Assert.assertTrue(out.equals(swimCheck));
     }
 }
